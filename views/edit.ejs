@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>Edit page</h1>
+    <form method="post"action="/listings/<%=list._id%>?_method=put">
+        <input name="title"value="<%=list.title%>"type="text">
+        <br>
+        <br>
+        
+        
+        <textarea name="description"><%=list.description %>></textarea>
+        <br>
+        <br>
+        <input name="image.filename"value="<%=list.filename%>"type="text">
+        <br>
+        <input name="image.url"value="<%=list.image.url%>"type="text">
+        <br>
+        <br>
+        <input name="price"value="<%=list.price%>"type="number">
+        <br><br>
+        <input name="location"value="<%=list.location%>"type="text">
+        <br><br>
+        <input name="country"value="<%=list.country%>"type="text">
+        <br>
+        <br>
+        <button>SUBMIT</button>
+        
+        
+            </form>
+    
+</body>
+
+</html>
